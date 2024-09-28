@@ -1,0 +1,19 @@
+ALVARO JESUS CASTRO PIZAÑA
+DIEGO GOMEZ TAGLE GONZALEZ
+1. En que año OpenGL se convirtió en un estandar de API´s graficas?
+a)1992
+b)2000
+c)1988
+d)1993
+
+2. Que problema soluciona el puerto AGP inventado por intel en 1996?
+a) Cuello de botella en el bus PCI en las tarjetas gráficas
+b) Alto consumo electrico de tarjetas gráficas
+c) bajo rendimiento de tarjetas gráficas
+d) Sobrecalentamiento de tarjetas gráficas
+
+3. ¿En que año fue lanzado el navegador DVD?
+a) 1995
+b) 1999
+c) 1993
+d) 1996
