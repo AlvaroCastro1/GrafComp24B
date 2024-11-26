@@ -48,12 +48,15 @@ for i, (name, matrix) in enumerate(matrices.items()):
     axes[i].plot(A[:, 0], A[:, 1], color="blue", label="Original")
     axes[i].plot(transformed[:, 0], transformed[:, 1], color="red", label="Transformada")
     axes[i].set_title(name)
+    print(name)
+    print(transformed)
+    print()
+    
     axes[i].set_xticks(np.arange(-5, 10, 1))
     axes[i].set_yticks(np.arange(-5, 10, 1))
     axes[i].set_aspect('equal', adjustable='box')
     axes[i].grid()
     axes[i].legend()
-    break
 
 # Ajustar el diseño
 plt.tight_layout()
