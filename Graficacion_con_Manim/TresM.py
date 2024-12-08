@@ -13,3 +13,5 @@ class ThirdScene(Scene):
     def construct(self):
         text = MathTex(r"\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}")
         self.add(text)
+
+#Revisado 
