@@ -196,3 +196,47 @@ class TextFonts(Scene):
         textSC.next_to(textSL,DOWN,buff=.5)
         self.add(textNormal,textItalic,textTypewriter,textBold,textSL,textSC)
         self.wait(3)
+        
+class Alvaro(Scene):
+    def construct(self):
+        # Título principal
+        title = Text("ALVARO JESUS CASTRO PIZAÑA", font_size=36, weight=BOLD)
+        title.to_edge(UP)  # Mover el título a la parte superior
+
+        # Subtítulo
+        subtitle = Text("2125698", font_size=28, slant=ITALIC)
+        subtitle.next_to(title, DOWN)  # Colocar debajo del título
+
+        # Descripción del contenido
+        description = Text("transform", font_size=24)
+        description.next_to(subtitle, DOWN, buff=0.5)  # Colocar debajo del subtítulo
+
+        # Animaciones
+        self.play(Write(title))
+        self.wait(1)
+        self.play(FadeIn(subtitle))
+        self.wait(1)
+        self.play(Write(description))
+        self.wait(2)
+
+class ZClosingScene(Scene):
+    def construct(self):
+        # Título principal
+        title = Text("ALVARO JESUS CASTRO PIZAÑA", font_size=36, weight=BOLD)
+        title.to_edge(UP)  # Mover el título a la parte superior
+
+        # Subtítulo
+        subtitle = Text("GRAFICACIÓN COMPUTACIONAL", font_size=28, slant=ITALIC)
+        subtitle.next_to(title, DOWN)  # Colocar debajo del título
+
+        # Descripción del contenido
+        description = Text("Periodo: 2024b", font_size=24)
+        description.next_to(subtitle, DOWN, buff=0.5)  # Colocar debajo del subtítulo
+
+        # Animaciones
+        self.play(Write(title))
+        self.wait(1)
+        self.play(FadeIn(subtitle))
+        self.wait(1)
+        self.play(Write(description))
+        self.wait(2)

@@ -321,3 +321,43 @@ class BraceText(Scene):
         
         # Esperar para mostrar el resultado final
         self.wait()
+
+class Alvaro(Scene):
+    def construct(self):
+        # Título principal
+        title = Text("ALVARO JESUS CASTRO PIZAÑA", font_size=36, weight=BOLD)
+        title.to_edge(UP)  # Mover el título a la parte superior
+
+        # Subtítulo
+        subtitle = Text("GRAFICACIÓN COMPUTACIONAL", font_size=28, slant=ITALIC)
+        subtitle.next_to(title, DOWN)  # Colocar debajo del título
+
+        # Descripción del contenido
+        description = Text("text formats", font_size=24)
+        description.next_to(subtitle, DOWN, buff=0.5)  # Colocar debajo del subtítulo
+
+        # Animaciones
+        self.play(Write(title))
+        self.wait(1)
+        self.play(FadeIn(subtitle))
+        self.wait(1)
+        self.play(Write(description))
+        self.wait(2)
+
+class ZClosingScene(Scene):
+    def construct(self):
+        # Texto principal
+        subject = Text("GRAFICACIÓN COMPUTACIONAL", font_size=36, weight=BOLD)
+        subject.to_edge(UP)  # Mover el texto a la parte superior
+
+        # Texto del periodo
+        period = Text("PERIODO: 2024B", font_size=28, slant=ITALIC)
+        period.next_to(subject, DOWN, buff=0.5)  # Colocar debajo del texto principal
+
+        # Animaciones
+        self.play(Write(subject))
+        self.wait(1)
+        self.play(FadeIn(period))
+        self.wait(2)
+        # Desvanecer ambos textos
+        self.play(FadeOut(subject), FadeOut(period))
